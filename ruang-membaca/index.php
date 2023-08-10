@@ -1,13 +1,6 @@
-<?php
-session_start();
-if (!isset($_SESSION["user"])) {
-   header("Location: ./regisform/index.php");
-}
-?>
-
-
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -18,13 +11,15 @@ if (!isset($_SESSION["user"])) {
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,700;1,700&display=swap" rel="stylesheet">
 
     <!-- Feather Icons -->
-    
-  <script src="https://unpkg.com/feather-icons"></script>
+
+    <script src="https://unpkg.com/feather-icons"></script>
 
     <!-- My Style -->
     <link href="./css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/index.css" />
     <title>Ruang Membaca</title>
 </head>
+
 <body>
 
     <!-- Navbar start -->
@@ -54,565 +49,124 @@ if (!isset($_SESSION["user"])) {
         </main>
     </section>
     <!-- Hero section end -->
-    
-    <!-- About section start -->
-    <section id="about" class="about">
-        <h2><span>Kategori</span> Novel</h2>
 
-        <div class="row">
-            <div class="about-img">
-
-            </div>
-            <div class="content">
-                
-            </div>
-        </div>
-    </section>
-    <!-- About section end -->
-
-<!-- carousel img start -->
-
-<div class="text">
-
-<h2 class="nama-genre"> Action</h2>
-
-    <div class="btn" style="margin-left: 90rem;">
-        <a href="#">
-            <p>View More</p>
-        </a>
-    </div>
-
-</div>
-
-<section class="product" id="product"> 
-        <div class="product-container1">
-            <div class="product-card">
-                <div class="product-image">
-                <a href="./komik/index.php">
-                    <img src="./img/a12.jpg" class="product-thumb" alt="">
-                    </a>
-                </div>
-                <div class="product-info">
-                    <h2 class="product-brand">Bocchi The Rock</h2> <br>
-                </div>
-            </div>
-        </div>   
-
-        <div class="product-container2">
-            <div class="product-card">
-                <div class="product-image">
-                    <img src="./img/kimi no nawa.jpg" class="product-thumb" alt="">
-    
-                </div>
-                <div class="product-info">
-                    <h2 class="product-brand">Kimi No Nawa</h2> <br>
-                </div>
-            </div>
-        </div>   
-
-        <div class="product-container3">
-            <div class="product-card">
-                <div class="product-image">
-                    <img src="./img/rock star wannabe.jpg" class="product-thumb" alt="">
-
-                </div>
-                <div class="product-info">
-                    <h2 class="product-brand">Rock Star Wannabe</h2>
-
-                </div>
-            </div>
-        </div>   
-
-        <div class="product-container4">
-            <div class="product-card">
-                <div class="product-image">
-                <a href="./komik/index.php">
-                    <img src="./img/a12.jpg" class="product-thumb" alt="">
-                    </a>
-                </div>
-                <div class="product-info">
-                    <h2 class="product-brand">Bocchi The Rock</h2> <br>
-                </div>
-            </div>
-        </div>   
-
-        <div class="product-container5">
-            <div class="product-card">
-                <div class="product-image">
-                    <img src="./img/kimi no nawa.jpg" class="product-thumb" alt="">
-    
-                </div>
-                <div class="product-info">
-                    <h2 class="product-brand">Kimi No Nawa</h2> <br>
-                </div>
-            </div>
-        </div>   
-
-        <div class="product-container6">
-            <div class="product-card">
-                <div class="product-image">
-                    <img src="./img/rock star wannabe.jpg" class="product-thumb" alt="">
-
-                </div>
-                <div class="product-info">
-                    <h2 class="product-brand">Rock Star Wannabe</h2>
-
-                </div>
-            </div>
-        </div>   
-
-</section>
-
-
-
-
-
-<div class="text" >
-
-<h2 class="nama-genre"> Comedy</h2>
-
-    <div class="btn" style="margin-left: 88rem;">
-        <a href="#">
-            <p>View More</p>
-        </a>
-    </div>
-
-</div>
-
-
-<div class="product" id="product"> 
-        <div class="product-container1">
-            <div class="product-card">
-                <div class="product-image">
-                <a href="./komik/index.php">
-                    <img src="./img/a12.jpg" class="product-thumb" alt="">
-                    </a>
-                </div>
-                <div class="product-info">
-                    <h2 class="product-brand">Bocchi The Rock</h2> <br>
-                </div>
-            </div>
-        </div>   
-
-        <div class="product-container2">
-            <div class="product-card">
-                <div class="product-image">
-                    <img src="./img/kimi no nawa.jpg" class="product-thumb" alt="">
-    
-                </div>
-                <div class="product-info">
-                    <h2 class="product-brand">Kimi No Nawa</h2> <br>
-                </div>
-            </div>
-        </div>   
-
-        <div class="product-container3">
-            <div class="product-card">
-                <div class="product-image">
-                    <img src="./img/rock star wannabe.jpg" class="product-thumb" alt="">
-
-                </div>
-                <div class="product-info">
-                    <h2 class="product-brand">Rock Star Wannabe</h2>
-
-                </div>
-            </div>
-        </div>   
-
-        <div class="product-container4">
-            <div class="product-card">
-                <div class="product-image">
-                <a href="./komik/index.php">
-                    <img src="./img/a12.jpg" class="product-thumb" alt="">
-                    </a>
-                </div>
-                <div class="product-info">
-                    <h2 class="product-brand">Bocchi The Rock</h2> <br>
-                </div>
-            </div>
-        </div>   
-
-        <div class="product-container5">
-            <div class="product-card">
-                <div class="product-image">
-                    <img src="./img/kimi no nawa.jpg" class="product-thumb" alt="">
-    
-                </div>
-                <div class="product-info">
-                    <h2 class="product-brand">Kimi No Nawa</h2> <br>
-                </div>
-            </div>
-        </div>   
-
-        <div class="product-container6">
-            <div class="product-card">
-                <div class="product-image">
-                    <img src="./img/rock star wannabe.jpg" class="product-thumb" alt="">
-
-                </div>
-                <div class="product-info">
-                    <h2 class="product-brand">Rock Star Wannabe</h2>
-
-                </div>
-            </div>
-        </div>   
-
-</div>
-
-
-
-
-<div class="text">
-
-<h2 class="nama-genre"> Horor</h2>
-
-    <div class="btn" style="margin-left: 91rem;">
-        <a href="#">
-            <p>View More</p>
-        </a>
-    </div>
-
-</div>
-
-
-
-
-
-
-<div class="product" id="product"> 
-        <div class="product-container1">
-            <div class="product-card">
-                <div class="product-image">
-                <a href="./komik/index.php">
-                    <img src="./img/a12.jpg" class="product-thumb" alt="">
-                    </a>
-                </div>
-                <div class="product-info">
-                    <h2 class="product-brand">Bocchi The Rock</h2> <br>
-                </div>
-            </div>
-        </div>   
-
-        <div class="product-container2">
-            <div class="product-card">
-                <div class="product-image">
-                    <img src="./img/kimi no nawa.jpg" class="product-thumb" alt="">
-    
-                </div>
-                <div class="product-info">
-                    <h2 class="product-brand">Kimi No Nawa</h2> <br>
-                </div>
-            </div>
-        </div>   
-
-        <div class="product-container3">
-            <div class="product-card">
-                <div class="product-image">
-                    <img src="./img/rock star wannabe.jpg" class="product-thumb" alt="">
-
-                </div>
-                <div class="product-info">
-                    <h2 class="product-brand">Rock Star Wannabe</h2>
-
-                </div>
-            </div>
-        </div>   
-
-        <div class="product-container4">
-            <div class="product-card">
-                <div class="product-image">
-                <a href="./komik/index.php">
-                    <img src="./img/a12.jpg" class="product-thumb" alt="">
-                    </a>
-                </div>
-                <div class="product-info">
-                    <h2 class="product-brand">Bocchi The Rock</h2> <br>
-                </div>
-            </div>
-        </div>   
-
-        <div class="product-container5">
-            <div class="product-card">
-                <div class="product-image">
-                    <img src="./img/kimi no nawa.jpg" class="product-thumb" alt="">
-    
-                </div>
-                <div class="product-info">
-                    <h2 class="product-brand">Kimi No Nawa</h2> <br>
-                </div>
-            </div>
-        </div>   
-
-        <div class="product-container6">
-            <div class="product-card">
-                <div class="product-image">
-                    <img src="./img/rock star wannabe.jpg" class="product-thumb" alt="">
-
-                </div>
-                <div class="product-info">
-                    <h2 class="product-brand">Rock Star Wannabe</h2>
-
-                </div>
-            </div>
-        </div>   
-
-</div>
-
-
-<div class="text">
-
-<h2 class="nama-genre"> Romance</h2>
-
-    <div class="btn" style="margin-left: 87rem;">
-        <a href="#">
-            <p>View More</p>
-        </a>
-    </div>
-
-</div>
-
-
-<div class="product" id="product"> 
-        <div class="product-container1">
-            <div class="product-card">
-                <div class="product-image">
-                <a href="./komik/index.php">
-                    <img src="./img/a12.jpg" class="product-thumb" alt="">
-                    </a>
-                </div>
-                <div class="product-info">
-                    <h2 class="product-brand">Bocchi The Rock</h2> <br>
-                </div>
-            </div>
-        </div>   
-
-        <div class="product-container2">
-            <div class="product-card">
-                <div class="product-image">
-                    <img src="./img/kimi no nawa.jpg" class="product-thumb" alt="">
-    
-                </div>
-                <div class="product-info">
-                    <h2 class="product-brand">Kimi No Nawa</h2> <br>
-                </div>
-            </div>
-        </div>   
-
-        <div class="product-container3">
-            <div class="product-card">
-                <div class="product-image">
-                    <img src="./img/rock star wannabe.jpg" class="product-thumb" alt="">
-
-                </div>
-                <div class="product-info">
-                    <h2 class="product-brand">Rock Star Wannabe</h2>
-
-                </div>
-            </div>
-        </div>   
-
-        <div class="product-container4">
-            <div class="product-card">
-                <div class="product-image">
-                <a href="./komik/index.php">
-                    <img src="./img/a12.jpg" class="product-thumb" alt="">
-                    </a>
-                </div>
-                <div class="product-info">
-                    <h2 class="product-brand">Bocchi The Rock</h2> <br>
-                </div>
-            </div>
-        </div>   
-
-        <div class="product-container5">
-            <div class="product-card">
-                <div class="product-image">
-                    <img src="./img/kimi no nawa.jpg" class="product-thumb" alt="">
-    
-                </div>
-                <div class="product-info">
-                    <h2 class="product-brand">Kimi No Nawa</h2> <br>
-                </div>
-            </div>
-        </div>   
-
-        <div class="product-container6">
-            <div class="product-card">
-                <div class="product-image">
-                    <img src="./img/rock star wannabe.jpg" class="product-thumb" alt="">
-
-                </div>
-                <div class="product-info">
-                    <h2 class="product-brand">Rock Star Wannabe</h2>
-
-                </div>
-            </div>
-        </div>   
-
-</div>
-
-
-<div class="text">
-
-<h2 class="nama-genre"> Sci-fi</h2>
-
-    <div class="btn" style="margin-left: 91.3rem;">
-        <a href="#">
-            <p>View More</p>
-        </a>
-    </div>
-
-</div>
-
-
-<div class="product" id="product"> 
-        <div class="product-container1">
-            <div class="product-card">
-                <div class="product-image">
-                <a href="./komik/index.php">
-                    <img src="./img/a12.jpg" class="product-thumb" alt="">
-                    </a>
-                </div>
-                <div class="product-info">
-                    <h2 class="product-brand">Bocchi The Rock</h2> <br>
-                </div>
-            </div>
-        </div>   
-
-        <div class="product-container2">
-            <div class="product-card">
-                <div class="product-image">
-                    <img src="./img/kimi no nawa.jpg" class="product-thumb" alt="">
-    
-                </div>
-                <div class="product-info">
-                    <h2 class="product-brand">Kimi No Nawa</h2> <br>
-                </div>
-            </div>
-        </div>   
-
-        <div class="product-container3">
-            <div class="product-card">
-                <div class="product-image">
-                    <img src="./img/rock star wannabe.jpg" class="product-thumb" alt="">
-
-                </div>
-                <div class="product-info">
-                    <h2 class="product-brand">Rock Star Wannabe</h2>
-
-                </div>
-            </div>
-        </div>   
-
-        <div class="product-container4">
-            <div class="product-card">
-                <div class="product-image">
-                <a href="./komik/index.php">
-                    <img src="./img/a12.jpg" class="product-thumb" alt="">
-                    </a>
-                </div>
-                <div class="product-info">
-                    <h2 class="product-brand">Bocchi The Rock</h2> <br>
-                </div>
-            </div>
-        </div>   
-
-        <div class="product-container5">
-            <div class="product-card">
-                <div class="product-image">
-                    <img src="./img/kimi no nawa.jpg" class="product-thumb" alt="">
-    
-                </div>
-                <div class="product-info">
-                    <h2 class="product-brand">Kimi No Nawa</h2> <br>
-                </div>
-            </div>
-        </div>   
-
-        <div class="product-container6">
-            <div class="product-card">
-                <div class="product-image">
-                    <img src="./img/rock star wannabe.jpg" class="product-thumb" alt="">
-
-                </div>
-                <div class="product-info">
-                    <h2 class="product-brand">Rock Star Wannabe</h2>
-
-                </div>
-            </div>
-        </div>   
-
-</div>
-
-
-<!-- carousel img end  -->
-
-
-
-
-    <!-- Footer start -->
-    <footer id="footer">
-        <div class="socials">
-            <a href="https://www.instagram.com/mhmmdynnsthr/"><i data-feather="instagram"></i></a>
-            <a href="#"><i data-feather="send"></i></a>
-            <a href="https://www.facebook.com/yannas.tihar.35"><i data-feather="facebook"></i></a>
+    <!-- Main section -->
+    <div class="novel-slide">
+        <div class="container-title">
+            Action&nbsp;
+            <span style="color: #59CE8F">Novel</span>
         </div>
 
-        <div class="links">
-            <a href="#home">Home</a>
-            <a href="#about">Tentang Kami</a>
-            <a href="#kategori">Kategori</a>
+        <div class="novel-box">
+            <div class="novel-info">
+                <img alt="novel poster" src="https://i.pinimg.com/1200x/f6/8c/12/f68c12e6fb7a1f6a42c702a6172ff81f.jpg" />
+                <div class="novel-name">Tensei Slime Datta Ken</div>
+                <div class="review">💚 8,8/10</div>
+            </div>
+
+            <div class="novel-info">
+                <img alt="novel poster" src="https://cdn.gramedia.com/uploads/items/Cover-Sword_Art_Online_02_INA.jpg" />
+                <div class="novel-name">Sword Art Online</div>
+                <div class="review">💚 7.5/10</div>
+            </div>
+
+            <div class="novel-info">
+                <img alt="novel poster" src="https://upload.wikimedia.org/wikipedia/id/0/08/Bocchi_The_Rock%21_volume_1_cover.jpg" />
+                <div class="novel-name">Bochi the kontol</div>
+                <div class="review">💚 7,3/10</div>
+            </div>
+
+            <div class="novel-info">
+                <img alt="novel poster" src="https://static.promediateknologi.id/crop/0x0:0x0/x/photo/2022/07/11/1356301783.jpg" style="" />
+                <div class="novel-name">One Piece: Red</div>
+                <div class="review">💚 8.8/10</div>
+            </div>
+
+            <div class="novel-info">
+                <img alt="novel poster" src="https://upload.wikimedia.org/wikipedia/id/0/0b/Your_Name_poster.png" />
+                <div class="novel-name">Kimi No nawa</div>
+                <div class="review">💚 8,3/10</div>
+            </div>
+
+
+
+            <div class="novel-info">
+                <img alt="novel poster" src="https://i.pinimg.com/1200x/a5/4d/6b/a54d6b55eaf4af0f8e6005e31dfecfc1.jpg" />
+                <div class="novel-name">Naruto The Last</div>
+                <div class="review">💚 8.1/10</div>
+            </div>
+
+            <div class="novel-info">
+                <img alt="novel poster" src="https://iebennsama.files.wordpress.com/2013/03/naruto-road-to-ninja1.jpg" />
+                <div class="novel-name">Naruto Road to Ninja</div>
+                <div class="review">💚 7.5/10</div>
+            </div>
+
+
+        </div>
+    </div>
+
+    <div class="novel-slide">
+        <div class="container-title">
+            Recent&nbsp;
+            <span style="color: #59CE8F">Novel</span>
         </div>
 
-        <div class="credit">
-            <p>Created by <a href="">ruangmembaca</a>. | &copy; 2023.</p>
+        <div class="novel-box">
+            <div class="novel-info">
+                <img alt="novel poster" src="https://upload.wikimedia.org/wikipedia/id/0/08/Bocchi_The_Rock%21_volume_1_cover.jpg" />
+                <div class="novel-name">Bochi the kontol</div>
+                <div class="review">💚 7,3/10</div>
+            </div>
+
+            <div class="novel-info">
+                <img alt="novel poster" src="https://i.pinimg.com/1200x/f6/8c/12/f68c12e6fb7a1f6a42c702a6172ff81f.jpg" />
+                <div class="novel-name">Tensei Slime Datta Ken</div>
+                <div class="review">💚 8,8/10</div>
+            </div>
+
+            <div class="novel-info">
+                <img alt="novel poster" src="https://upload.wikimedia.org/wikipedia/id/0/0b/Your_Name_poster.png" />
+                <div class="novel-name">Kimi No nawa</div>
+                <div class="review">💚 8,3/10</div>
+            </div>
+
+            <div class="novel-info">
+                <img alt="novel poster" src="https://iebennsama.files.wordpress.com/2013/03/naruto-road-to-ninja1.jpg" />
+                <div class="novel-name">Naruto Road to Ninja</div>
+                <div class="review">💚 7.5/10</div>
+            </div>
+
+            <div class="novel-info">
+                <img alt="novel poster" src="https://static.promediateknologi.id/crop/0x0:0x0/x/photo/2022/07/11/1356301783.jpg" style="" />
+                <div class="novel-name">One Piece: Red</div>
+                <div class="review">💚 8.8/10</div>
+            </div>
+
+            <div class="novel-info">
+                <img alt="novel poster" src="https://i.pinimg.com/1200x/a5/4d/6b/a54d6b55eaf4af0f8e6005e31dfecfc1.jpg" />
+                <div class="novel-name">Naruto The Last</div>
+                <div class="review">💚 8.1/10</div>
+            </div>
+
+
+
+            <div class="novel-info">
+                <img alt="novel poster" src="https://cdn.gramedia.com/uploads/items/Cover-Sword_Art_Online_02_INA.jpg" />
+                <div class="novel-name">Sword Art Online</div>
+                <div class="review">💚 7.5/10</div>
+            </div>
         </div>
-    </footer>
-    <!-- Footer end -->
-
-
-
+    </div>
 
 
     <!-- Feather Icons -->
     <script>
-      feather.replace()
+        feather.replace()
     </script>
 
     <!-- My Javascript -->
     <script src="js/script.js"></script>
 </body>
+
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

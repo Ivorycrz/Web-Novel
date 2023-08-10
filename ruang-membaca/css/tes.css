@@ -1,0 +1,137 @@
+.ourteam-title-container {
+  background-color: #191d23;
+  font-family: "Fraunces", sans-serif;
+  font-size: 30px;
+  color: white;
+  text-align: center;
+  padding-top: 100px;
+  padding-bottom: 50px;
+  font-weight: 900;
+}
+.container-testing {
+  background-color: #191d23;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  flex-wrap: wrap;
+  padding-top: 50px;
+}
+.container-testing-2 {
+  background-color: #191d23;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  flex-wrap: wrap;
+}
+
+.card-pembungkus {
+  background-color: #ffffff05;
+  width: 300px;
+  margin: 20px;
+  height: 300px;
+  border-radius: 1px;
+  position: relative;
+}
+
+.card-body {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  right: -100%;
+}
+
+.socmed-icons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.socmed-icons .instagram {
+  margin-top: 80px;
+  margin-bottom: 40px;
+}
+.card-item {
+  background-color: rgba(247, 249, 247, 0);
+  width: 300px;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  padding-top: 10px;
+}
+
+.card-item img {
+  width: 150px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.nama-container {
+  padding-top: 30px;
+  text-align: center;
+}
+.card-pembungkus h1 {
+  text-align: center;
+  font-family: "Poppins";
+  font-size: 10px;
+  color: white;
+}
+
+.card-pembungkus span {
+  font-size: 10px;
+  font-family: "Poppins";
+  color: rgb(175, 178, 181);
+}
+
+.card-pembungkus .konten > * {
+  transform: translateY(140px);
+  transition: transform 1s;
+}
+
+.card-pembungkus:hover .konten > * {
+  transform: translateY(0);
+}
+
+.konten a {
+  color: white;
+  text-decoration: none;
+  list-style: none;
+}
+
+.card-pembungkus .konten {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  text-align: center;
+  font-size: 50px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 0.7s;
+}
+
+.card-pembungkus:hover .konten {
+  text-decoration: none;
+  background-color: #1e2128;
+
+  border-radius: 1px;
+  opacity: 1;
+  position: absolute;
+}
+
+.card-pembungkus:hover {
+  opacity: 0;
+}
+
+@media screen and (max-width: 800px) {
+  .container-title {
+    text-align: left;
+    padding-left: 40px;
+    font-size: 30px;
+    max-width: 300px;
+  }
+}
